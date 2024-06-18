@@ -1,8 +1,9 @@
 import streamlit as st
 
 from yaoya.init_app import init_app, init_pages, init_session
-from dataclass import 
-st.write("")
+from dataclasses import dataclass
+dataclass = dataclass()
+st.write(database)
 if not st.session_state.get("is_started", False):
     ssm = init_session()
     pages = init_pages(ssm)
