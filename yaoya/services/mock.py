@@ -56,7 +56,7 @@ class MockDB:
             for mock_user in mock_users:
                 table.insert(mock_user.to_dict())
 
-    def _create_mock_item_table(self, n: int = 10) -> None:
+    def _create_mock_item_table(self, n: int = 15) -> None:
         _ = Field(locale=Locale.JA)
         schema = Schema(
             schema=lambda: {
