@@ -12,6 +12,7 @@ class IItemAPIClientService(Protocol):
 
 class MockItemAPIClientService(IItemAPIClientService):
     def __init__(self, mockdb: MockDB) -> None:
+        dataset.all()
         self.mockdb = mockdb
 
     def get_all(self) -> list[Item]:
